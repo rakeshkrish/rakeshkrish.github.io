@@ -1,4 +1,3 @@
-## Fuck 
 
 I am interested in computational biophysics, with a focus on investigating self
 assembling and phase separating systems in the cell. I develop models integrating
@@ -6,8 +5,9 @@ theory, experiments and bioinformatics to study these phenomena.
 
 ### Education
 
-Indian Institute of Technology Bombay     Ph.D., Computational Biophysics (Dec 2016-present)
-SASTRA University           B.Tech., Bioinformatics (July 2012-Aug 2016)
+Indian Institute of Technology Bombay     Ph.D., Computational Biophysics
+
+SASTRA UniversityB.Tech., Bioinformatics
 
 ```markdown
 Syntax highlighted code block
