@@ -7,7 +7,7 @@ theory, experiments and bioinformatics to study these phenomena.
 
 Indian Institute of Technology Bombay     Ph.D., Computational Biophysics
 
-SASTRA UniversityB.Tech., Bioinformatics
+SASTRA University B.Tech., Bioinformatics
 
 ```markdown
 Syntax highlighted code block
@@ -23,7 +23,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](url) and ![Image](https://github.com/rakeshkrish/rakeshkrish.github.io/blob/main/22.png)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
