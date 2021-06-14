@@ -120,13 +120,3 @@ p.big {
   background-color: #555;
 }
 
-#header{
-    position: relative;
-}
-#logo{
-    position: absolute;
-    width: 320px;
-    height: 100px;
-    top: 60px;
-    left: -10px;
-}
