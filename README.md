@@ -1,19 +1,19 @@
 ## RAKESH KRISHNAN
 
-You can use the [editor on GitHub](https://github.com/rakeshkrish/rakeshkrish.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+I am interested in computational biophysics, with a focus on investigating self
+assembling and phase separating systems in the cell. I develop models integrating
+theory, experiments and bioinformatics to study these phenomena.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Education
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Indian Institute of Technology Bombay     Ph.D., Computational Biophysics (Dec 2016-present)
+SASTRA University           B.Tech., Bioinformatics (July 2012-Aug 2016)
 
 ```markdown
 Syntax highlighted code block
 
 # Header 1
-## Header 2
-### Header 3
+
 
 - Bulleted
 - List
