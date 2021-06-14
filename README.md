@@ -1,4 +1,4 @@
-## RAKESH KRISHNAN
+## Fuck 
 
 I am interested in computational biophysics, with a focus on investigating self
 assembling and phase separating systems in the cell. I develop models integrating
