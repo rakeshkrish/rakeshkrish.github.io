@@ -1,0 +1,54 @@
+:root{
+  --paper:#101310;
+  --ink:#eee9dd;
+  --muted:#a3aaa0;
+  --line:#343b35;
+  --accent:#d47a55;
+  --dark:#1a231d;
+}
+
+body,.site-header{background:var(--paper);color:var(--ink)}
+.site-header{border-color:var(--line)}
+.eyebrow{color:#aab5a9}
+.nav a,.text-link,.contact-links a,.contact-arrow{color:var(--ink)}
+.nav-contact{border-color:#899188}
+.hero-intro,.section-note,.research-card>p,.contact-bottom>p{color:#a5ada4}
+.hero-meta,.art-index span,.art-caption,.art-coordinate,.hero-bottom,
+.section-note,.card-top,.pub-journal,.pub-footnote,.contact-index,
+.site-footer>span,.site-footer>a:last-child{color:#929c92}
+.hero-art:before{background:radial-gradient(circle at 48% 49%,#29342a 0%,#1a221c 42%,rgba(16,19,16,0) 71%)}
+.orbit ellipse{stroke:#92a38e;opacity:.4}
+.bonds path{stroke:#a1ad9c;opacity:.42}
+.nodes circle{stroke:var(--paper)}
+.intro-band{background:#1a231d}
+.intro-grid .eyebrow,.about .eyebrow{color:#aab5aa}
+.research-card{border-color:#343d36}
+.research-card:hover{border-color:#657267}
+.card-visual,.card-peptide .card-visual,.card-phase .card-visual,.card-dna .card-visual{background:#202923}
+.card-top{color:#aab4a8}
+.tag-row span{color:#b4bdb2;border-color:#515d53}
+.membrane{opacity:.62}
+.membrane:after{background:#52634f;opacity:.6}
+.visual-label{color:#aab4a7}
+.droplet{background:radial-gradient(ellipse at 45% 45%,#bd895e,#865f48 68%,rgba(134,95,72,.5));box-shadow:0 0 0 10px rgba(203,167,120,.1),0 0 0 20px rgba(203,167,120,.055)}
+.dna-visual svg{stroke:#9aaf98}
+.dna-visual svg path:first-child{stroke:#b1c3ad}
+.dna-visual svg path:nth-child(2){stroke:#c8a77e}
+.methods-band{background:#1c241e}
+.method-list,.method-list>div{border-color:#3a443c}
+.method-list small{color:#a0aaa0}
+.publication-list,.publication{border-color:#343b35}
+.pub-arrow{color:#a0aaa0}
+.about{background:#1a241d}
+.timeline-label{color:#a9b4a9}
+.timeline-item{border-color:#3e4b41}
+.timeline-date{color:#d79572}
+.timeline-item p{color:#c2cbc0}
+.timeline-item small{color:#a7b1a6}
+.current-note{border-color:#3e4b41;background:rgba(255,255,255,.025)}
+.talks>span:not(.timeline-label){border-color:#3e4b41;color:#d1d8ce}
+.contact-main,.contact-links a{border-color:#343b35}
+.contact-arrow{border-color:#59645b}
+.contact-arrow:hover{background:#e6dfd1;color:#142019}
+.site-footer{border-color:#343b35}
+::selection{background:#b96343;color:#fff8ee}

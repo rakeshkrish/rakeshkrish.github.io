@@ -1,261 +1,90 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Rakesh Krishnan</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-              // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-   
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-            });
-            } // End if
-            });
-            });
-            
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-        </script>
-    </head>
-   
-    
-    <body>
-
-    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-    <script src="js/bootstrap.js"></script>
-        
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Rakesh Krishnan </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#section1">Personal Details</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section2">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section3">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section4">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section5">Contact</a>
-                </li>
-            </ul>
-        </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta name="description" content="Rakesh Krishnan is a computational biophysicist integrating theory, simulation, experiments, and bioinformatics to study biological systems.">
+  <title>Rakesh Krishnan — Computational Biophysics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dark-theme.css">
+  <link rel="stylesheet" href="type-system.css">
+</head>
+<body>
+  <div class="page-grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Rakesh Krishnan, home"><span class="wordmark-dot"></span> RAKESH KRISHNAN</a>
+    <button class="menu-toggle" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#research">Research</a><a href="#publications">Publications</a><a href="#about">About</a><a class="nav-contact" href="#contact">Get in touch <span>↗</span></a>
     </nav>
+  </header>
 
-        
-        <section id="color1">
-        <h1 id="section1" class="tab">Personal Details</h1>
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    
-                     <img src="rakeshk.jpg" class="rounded float-left"  alt="rakesh" width="170">
-                     
-                    </div>
-                <div class="col-lg-4 col-sm-6">
-                    <ul class="info">
-                      <li><b>Name        :</b> Rakesh Krishnan</li>
-                      <li><b>Nationality :</b>Indian</li>
-                      <li><b>Phone       :</b>+91 7900140590</li>
-                      <li><b>Email       :</b>rakeshkrish@iitb.ac.in</li>
-                    </ul> 
-                </div>
-                <div class="col-lg-5 col-sm-12">
-                <p class="big">
-                    I am interested in computational biophysics, with a focus on investigating self
-assembling and phase separating systems in the cell. I develop models integrating
-theory, experiments and bioinformatics to study these phenomena.
-                <p/>
-                </div>
-            </div>
-        </div>
-        </section>
-        
-        
-        <section id="color2">
-        <h1 id="section2" class="tab">Education</h1>
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                <h5>2017-Current</h5>
-                <h6><b>Ph.D.</b></h6>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                  <a class="link" href="http://iitb.ac.in"><h5>Indian Institute of Technology Bombay</h5></a>
-                  Department of Bioscience and Bioengineering
-                </div>
-            </div>
-        </div>
-        
-        
-        <hr style="border: 2px solid #f2f2f2;" />
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                <h5>2012-2016</h5>
-                <h6><b>B.Tech., Bioinformatics</b></h6>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                  <a class="link" href="https://iiserb.ac.in"><h5> SASTRA University, Thanjavur</h5></a>
-                  School of Chemical and Biotechnology
-                </div>
-            </div>
-        </div>
-        
-        </section>
-           
-   
-        <section id="color1">
-        <h1 id="section3" class="tab">Experience</h1>
-                
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                <h5>Research Assistant</h5>
-                <h6><b>IIT Madras</b></h6>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                  <a>Computational study of urea denaturation of protein using Replica Exchange Molecular Dynamics (REMD) simulations.</a>
-                  
-                </div>
-            </div>
-        </div>
-                        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                <h5>B.Tech. Thesis</h5>
-                <h6><b>SASTRA University</b></h6>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                  <a>Characterization of transition states in the folding pathways of two homologous proteins using Molecular Dynamics (MD) simulations</a>
-               
-                </div>
-            </div>
-        </div>
-    
-        </section>         
-        <section id="color2">
-        <h1 id="section4" class="tab">Skills</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                <h4>Programming Skills</h4>
-                    <ul class="info">
-                        <li>C language</li>
-                        <li>C++</li>
-                        <li>Python</li>
-                        <li>Perl</li>
-                        <li>MySQL</li>
-                        <li>HTML</li>
-                    </ul> 
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                <h4>Simulation Skills</h4>
-                    <ul class="info">
-                      <li>Molecular Dynamics</li>
-                      <li>Brownian Dynamics</li>
-                      <li>Monte Carlo</li>
-                    </ul> 
-                </div>
-            </div>
-        </div>
-        </section>       
-        <section id="color1">
-        <h1 id="section5" class="tab">Contact</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                <h4>Address</h4>
-                  Physical Biology Lab,
-                  Department of Bioscience and Bioengineering, 
-                  Indian Institute of Technology Bombay, 
-                  Powai, Mumbai 400 076, Maharashtra, India 
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                <h4>Phone</h4>
-                  +91 7900140590
-                </div>
-            </div>
-        </div>
-            
-        <hr style="border: 2px solid #f2f2f2;" />
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                <h4>Email</h4>
-                  <a href="mailto:rakeshkrish.iitb.ac.in" target="_top">rakeshkrish@iitb.ac.in</a> <br />
-                  <a href="mailto:heisenbergrk@gmail.com" target="_top">heisenbergrk@gmail.com</a>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                <h4>I am also on social networks</h4>
-<!-- Add font awesome icons -->
-                <a href="https://www.facebook.com/rakesh.krishnan.5095/" class="fa fa-facebook"></a>
-                    <a href="https://twitter.com/rakez_krish" class="fa fa-twitter"></a>
-                <a href="https://www.linkedin.com/in/rakesh-k-8bb11863/" class="fa fa-linkedin"></a>
-                
-                </div>
-            </div>
-        </div>
-        <hr style="border: 2px solid #f2f2f2;" />
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5330.790515172766!2d72.9134066123854!3d19.13229006439018!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68fdcea4c5c5894e!2sIndian+Institute+of+Technology+Bombay!5e0!3m2!1sen!2sin!4v1530867751597" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-   
-        </section>
-  
-        
-        <section id="color3">
-    <div class="footer-copyright text-center py-3">Copyright © 2018 :
-      <a href="https://sangramkadam.github.io/PersonalWeb/"> Rakesh Krishnan.</a>All rights reserved.
-    </div>
-        </section>
-        
-        
-        
-    </body>
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> COMPUTATIONAL BIOPHYSICS</p>
+        <h1>Making sense of<br>biology <em>in motion.</em></h1>
+        <p class="hero-intro">I’m Rakesh Krishnan, a researcher using computation to understand how molecules organize, interact, and shape biological systems.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#research">Explore my research <span>↓</span></a><a class="text-link" href="mailto:rakeshkrishnan712@gmail.com">Start a conversation <span>↗</span></a></div>
+        <div class="hero-meta"><span>THEORY</span><i></i><span>SIMULATION</span><i></i><span>BIOINFORMATICS</span></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract illustration of molecules organizing into a biological structure">
+        <div class="art-index">FIG. 01 <span>MOLECULAR ORGANIZATION</span></div>
+        <svg class="molecule" viewBox="0 0 560 560" role="img" aria-label="Molecular network illustration">
+          <defs><radialGradient id="core" cx="50%" cy="50%"><stop offset="0" stop-color="#e1a26f" stop-opacity=".88"/><stop offset="1" stop-color="#e1a26f" stop-opacity="0"/></radialGradient><filter id="blur"><feGaussianBlur stdDeviation="22"/></filter></defs>
+          <circle cx="284" cy="275" r="142" fill="url(#core)" filter="url(#blur)" opacity=".8"/>
+          <g class="orbit orbit-one"><ellipse cx="280" cy="278" rx="204" ry="94" transform="rotate(-32 280 278)"/><ellipse cx="280" cy="278" rx="204" ry="94" transform="rotate(28 280 278)"/><ellipse cx="280" cy="278" rx="204" ry="94" transform="rotate(88 280 278)"/></g>
+          <g class="bonds"><path d="M88 208 173 157 252 194 325 117 419 172 463 268 402 359 321 399 241 363 146 407 92 320Z"/><path d="m173 157 16 120 132 122M252 194l-63 83 136-43 94 125M325 117l-6 117 144 34M88 208l101 69-97 43m310-148-100 74 79 91M241 363l-52-86"/></g>
+          <g class="nodes"><circle cx="88" cy="208" r="7"/><circle cx="173" cy="157" r="9"/><circle cx="252" cy="194" r="6"/><circle cx="325" cy="117" r="8"/><circle cx="419" cy="172" r="6"/><circle cx="463" cy="268" r="9"/><circle cx="402" cy="359" r="7"/><circle cx="321" cy="399" r="10"/><circle cx="241" cy="363" r="6"/><circle cx="146" cy="407" r="9"/><circle cx="92" cy="320" r="6"/><circle cx="189" cy="277" r="11"/><circle cx="319" cy="234" r="13"/><circle cx="325" cy="356" r="5"/><circle cx="290" cy="305" r="5"/></g>
+          <circle class="focus-node" cx="319" cy="234" r="21"/><circle class="focus-center" cx="319" cy="234" r="5"/>
+          <g class="labels"><text x="64" y="187">PEPTIDE</text><text x="392" y="144">ASSEMBLY</text><text x="404" y="397">DYNAMICS</text><text x="115" y="450">INTERACTIONS</text></g>
+        </svg>
+        <div class="art-caption"><span class="caption-mark">◎</span><span>From molecular detail<br>to biological behavior</span><span class="caption-rule"></span></div>
+        <span class="art-coordinate">BIOPHYSICAL SYSTEMS<br>MOLECULE → FUNCTION</span>
+      </div>
+      <div class="hero-bottom"><span>INQUIRY THROUGH COMPUTATION</span><span>SCROLL TO EXPLORE <b>↓</b></span></div>
+    </section>
+
+    <section class="intro-band">
+      <div class="section-wrap intro-grid"><p class="eyebrow">A QUESTION-DRIVEN APPROACH</p><p class="intro-statement">Biological systems are shaped by interactions across scales. I combine <span>theory, experiments, and bioinformatics</span> to uncover the mechanisms behind them.</p></div>
+    </section>
+
+    <section class="research section-wrap" id="research">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> SELECTED WORK</p><h2>Research <em>directions</em></h2></div><p class="section-note">I build models that connect molecular mechanisms to biological function.</p></div>
+      <div class="research-grid">
+        <article class="research-card card-peptide"><div class="card-top"><span>01 / ANTIMICROBIAL DISCOVERY</span><span class="card-arrow">↗</span></div><div class="card-visual peptide-visual" aria-hidden="true"><div class="membrane membrane-top"></div><div class="membrane membrane-bottom"></div><div class="peptide-chain"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div><span class="visual-label label-a">LIPID BILAYER</span><span class="visual-label label-b">AMP</span></div><h3>Finding new ways to<br>disarm resistant bacteria</h3><p>Bioinformatics and molecular dynamics reveal how short antimicrobial peptides interact with membranes and where new antibiotic candidates may be found.</p><div class="tag-row"><span>ANTIMICROBIAL PEPTIDES</span><span>MOLECULAR DYNAMICS</span></div></article>
+        <article class="research-card card-phase"><div class="card-top"><span>02 / BIOLOGICAL ORGANIZATION</span><span class="card-arrow">↗</span></div><div class="card-visual phase-visual" aria-hidden="true"><div class="droplet"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="phase-particles"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div><span class="visual-label label-a">DENSE PHASE</span><span class="visual-label label-c">POLYMER</span></div><h3>How weak interactions<br>build complex assemblies</h3><p>Bead-spring models and Langevin dynamics help explain how non-specific interactions drive phase separation and the maturation of macromolecular complexes.</p><div class="tag-row"><span>PHASE SEPARATION</span><span>POLYMER PHYSICS</span></div></article>
+        <article class="research-card card-dna"><div class="card-top"><span>03 / GENOME MAINTENANCE</span><span class="card-arrow">↗</span></div><div class="card-visual dna-visual" aria-hidden="true"><svg viewBox="0 0 420 180"><path d="M38 18 C160 18 170 160 292 160 S355 18 390 18M38 160 C160 160 170 18 292 18 S355 160 390 160"/><path d="m76 36 0 106m45-89 0 72m47-49v26m48-67v109m45-109v109m44-79v49m45-68v89m40-110v109"/></svg><div class="dna-proteins"><b></b><b></b><b></b><b></b><b></b></div><span class="visual-label label-a">DNA</span><span class="visual-label label-c">PROTEINS</span></div><h3>Modeling the DNA–protein<br>repair environment</h3><p>Coarse-grained simulations probe how protein interactions and DNA conformation shape phase-separated clusters during DNA damage repair.</p><div class="tag-row"><span>DNA–PROTEIN INTERACTIONS</span><span>COARSE-GRAINED MODELS</span></div></article>
+      </div>
+    </section>
+
+    <section class="methods-band"><div class="section-wrap methods-inner"><div><p class="eyebrow">TOOLS OF INQUIRY</p><h2>From model<br>to <em>mechanism.</em></h2></div><div class="method-list"><div><span>01</span><p><b>Simulation</b><small>LAMMPS · NAMD · GROMACS</small></p></div><div><span>02</span><p><b>Scientific computing</b><small>C · C++ · Python · Shell · Tcl</small></p></div><div><span>03</span><p><b>Structural analysis</b><small>VMD · PyMOL · OVITO</small></p></div><div><span>04</span><p><b>Biological data</b><small>Bioinformatics · Data mining</small></p></div></div></div></section>
+
+    <section class="publications section-wrap" id="publications">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> RESEARCH OUTPUT</p><h2>Selected <em>publications</em></h2></div><a class="text-link" href="https://scholar.google.com/citations?user=QClgucsAAAAJ" target="_blank" rel="noreferrer">Google Scholar <span>↗</span></a></div>
+      <div class="publication-list">
+        <a class="publication" href="https://scholar.google.com/scholar?q=Design+of+a+cyclic+peptide+targeting+intracellular+Staphylococcus+aureus" target="_blank" rel="noreferrer"><span class="pub-year">2026</span><span class="pub-title">Design of a cyclic peptide targeting intracellular <i>Staphylococcus aureus</i></span><span class="pub-journal">Molecular Biomedicine, 7, 120</span><span class="pub-arrow">↗</span></a>
+        <a class="publication" href="https://scholar.google.com/scholar?q=Local+structural+constraints+charge+distribution+protegrin-1+arginine+loop+colistin-resistant+Klebsiella+pneumoniae" target="_blank" rel="noreferrer"><span class="pub-year">2026</span><span class="pub-title">Local structural constraints and charge distribution in the protegrin-1 arginine loop govern activity against colistin-resistant <i>Klebsiella pneumoniae</i></span><span class="pub-journal">Drug Resistance Updates, 87, 101405</span><span class="pub-arrow">↗</span></a>
+        <a class="publication" href="https://scholar.google.com/scholar?q=Mitochondrial+NDUFA4+is+a+functional+switch+controlling+TAMs+and+tumor+immunity" target="_blank" rel="noreferrer"><span class="pub-year">2025</span><span class="pub-title">Mitochondrial NDUFA4 is a functional switch controlling TAMs and tumor immunity</span><span class="pub-journal">Immunity, 58, 1–18</span><span class="pub-arrow">↗</span></a>
+        <a class="publication" href="https://scholar.google.com/scholar?q=Synthetic+peptides+targeting+an+orphan+GPCR+display+anti-infective+potential" target="_blank" rel="noreferrer"><span class="pub-year">2025</span><span class="pub-title">Synthetic peptides targeting an orphan GPCR display anti-infective potential</span><span class="pub-journal">Cell Biomaterials, 1, 100088</span><span class="pub-arrow">↗</span></a>
+        <a class="publication" href="https://scholar.google.com/scholar?q=SUMO1+hinders+alpha-Synuclein+fibrillation+by+inducing+structural+compaction" target="_blank" rel="noreferrer"><span class="pub-year">2023</span><span class="pub-title">SUMO1 hinders α-Synuclein fibrillation by inducing structural compaction</span><span class="pub-journal">Protein Science, 32(5), e4632</span><span class="pub-arrow">↗</span></a>
+        <a class="publication" href="https://doi.org/10.1371/journal.pcbi.1010067" target="_blank" rel="noreferrer"><span class="pub-year">2022</span><span class="pub-title">Role of non-specific interactions in the phase-separation and maturation of macromolecules</span><span class="pub-journal">PLOS Computational Biology, 18(5), e1010067</span><span class="pub-arrow">↗</span></a>
+        <a class="publication" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=QClgucsAAAAJ&citation_for_view=QClgucsAAAAJ:d1gkVwhDpl0C" target="_blank" rel="noreferrer"><span class="pub-year">2021</span><span class="pub-title">Spatiotemporal solidification of α-synuclein inside the liquid droplets</span><span class="pub-journal">bioRxiv</span><span class="pub-arrow">↗</span></a>
+        <a class="publication" href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=QClgucsAAAAJ&citation_for_view=QClgucsAAAAJ:9yKSN-GCB0IC" target="_blank" rel="noreferrer"><span class="pub-year">2021</span><span class="pub-title">Probing the role of non-specific interactions in promoting functional protein–protein complexes</span><span class="pub-journal">Biophysical Journal, 121(3), 526a</span><span class="pub-arrow">↗</span></a>
+        <a class="publication" href="https://scholar.google.com/scholar?q=Computational+Characterization+of+a+Cryptic+Intermediate+in+the+Unfolding+Kinetics+of+an+All-beta-Sheet+Protein" target="_blank" rel="noreferrer"><span class="pub-year">2015</span><span class="pub-title">Computational characterization of a cryptic intermediate in the unfolding kinetics of an all-β-sheet protein</span><span class="pub-journal">Journal of Pharmaceutical Sciences and Research, 7(11), 978</span><span class="pub-arrow">↗</span></a>
+      </div>
+      <p class="pub-footnote">Publication details transcribed from the existing portfolio. Follow the links for citation records.</p>
+    </section>
+
+    <section class="about" id="about"><div class="section-wrap about-grid"><div class="about-heading"><p class="eyebrow"><span class="eyebrow-line"></span> THE RESEARCHER</p><h2>Curiosity across<br><em>disciplines.</em></h2><p class="about-lede">I work at the intersection of physics, computation, and biology—where a useful model can make a complex system easier to see.</p><a class="button button-outline" href="mailto:rakeshkrishnan712@gmail.com">Request my CV <span>↗</span></a></div><div class="about-details"><div class="timeline"><p class="timeline-label">EXPERIENCE & EDUCATION</p><div class="timeline-item"><span class="timeline-date">2023 — 2025</span><div><h3>Postdoctoral Fellow</h3><p>University of Pennsylvania<br><small>Antimicrobial resistance & peptide discovery · Prof. Cesar de la Fuente</small></p></div></div><div class="timeline-item"><span class="timeline-date">2017 — 2023</span><div><h3>Ph.D., Computational Biophysics</h3><p>Indian Institute of Technology Bombay<br><small>Phase separation & protein–DNA systems · Prof. Ranjith Padinhateeri</small></p></div></div><div class="timeline-item"><span class="timeline-date">2012 — 2016</span><div><h3>B.Tech., Bioinformatics</h3><p>SASTRA University, India</p></div></div></div><div class="current-note"><span class="status-dot"></span><p>Currently interested in simulation and modeling of short antimicrobial peptides as antibiotics.</p></div><div class="talks"><p class="timeline-label">RECENT INVITED TALKS</p><span>NIT Andhra Pradesh · May 2026</span><span>CESGA, Spain · Oct 2025</span><span>Biocogniz Academy · Dec 2024</span></div></div></div></section>
+
+    <section class="contact section-wrap" id="contact"><div class="contact-top"><p class="eyebrow"><span class="eyebrow-line"></span> OPEN TO COLLABORATION</p><span class="contact-index">LET’S CONNECT · 01—04</span></div><div class="contact-main"><h2>Have a question<br>worth <em>modeling?</em></h2><a class="contact-arrow" href="mailto:rakeshkrishnan712@gmail.com" aria-label="Email Rakesh Krishnan">↗</a></div><div class="contact-bottom"><p>I’m always glad to hear from researchers, collaborators, and curious minds.</p><div class="contact-links"><a href="mailto:rakeshkrishnan712@gmail.com">rakeshkrishnan712@gmail.com <span>↗</span></a><a href="https://www.linkedin.com/in/rakesh-k-8bb11863/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a><a href="https://twitter.com/rakez_krish" target="_blank" rel="noreferrer">Twitter <span>↗</span></a></div></div></section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="#home"><span class="wordmark-dot"></span> RAKESH KRISHNAN</a><span>COMPUTATIONAL BIOPHYSICS · © <span id="year"></span></span><a href="#home">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script>
+</body>
 </html>
-

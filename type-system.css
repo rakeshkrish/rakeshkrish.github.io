@@ -1,0 +1,63 @@
+:root{
+  --sans:'DM Sans',Arial,sans-serif;
+  --display:'DM Sans',Arial,sans-serif;
+  --serif:'DM Sans',Arial,sans-serif;
+  --mono:'DM Sans',Arial,sans-serif;
+  --text-base:16px;
+  --text-small:13px;
+}
+
+body{font-family:var(--sans);font-size:var(--text-base);line-height:1.65}
+.wordmark,.eyebrow,.hero-meta,.art-index,.art-coordinate,.hero-bottom,
+.card-top,.tag-row span,.visual-label,.method-list>div>span,.method-list small,
+.pub-year,.contact-index,.timeline-label,.timeline-date,.talks>span,
+.site-footer>span,.site-footer>a:last-child{font-family:var(--sans)}
+.wordmark{font-size:11px;letter-spacing:.09em}
+.eyebrow{font-size:11px;letter-spacing:.08em}
+.hero h1{font:600 clamp(46px,5.5vw,68px)/1.08 var(--display);letter-spacing:-.045em}
+.section-heading h2,.methods-inner h2,.about h2{font:600 clamp(38px,4.5vw,54px)/1.12 var(--display);letter-spacing:-.045em}
+.contact h2{font:600 clamp(44px,6.8vw,78px)/1.1 var(--display);letter-spacing:-.045em}
+h1 em,h2 em{font-family:var(--display);font-style:normal;font-weight:500;letter-spacing:inherit}
+.hero-intro{font-size:16px;line-height:1.7}
+.nav a{font-size:14px}
+.nav-contact,.button,.text-link{font-size:13px}
+.intro-grid .eyebrow{font-size:11px}
+.intro-statement{font:400 clamp(23px,2.8vw,34px)/1.5 var(--display);letter-spacing:-.025em}
+.research-card h3{font:600 20px/1.4 var(--display);letter-spacing:-.025em}
+.research-card>p{font-size:14px;line-height:1.7}
+.card-top{font-size:10px;letter-spacing:.05em}
+.tag-row span{font-size:10px;letter-spacing:.025em}
+.visual-label,.art-index,.art-coordinate,.hero-bottom{font-size:9px;letter-spacing:.06em}
+.method-list b{font:500 14px var(--sans)}
+.method-list small{font-size:11px;letter-spacing:.01em}
+.publication{grid-template-columns:64px 1fr 255px 18px;gap:16px}
+.pub-year{font-size:12px}
+.pub-title{font:500 16px/1.55 var(--display);letter-spacing:-.015em}
+.pub-journal{font-size:13px;line-height:1.5}
+.pub-footnote{font-size:12px}
+.timeline-label,.contact-index{font-size:10px;letter-spacing:.08em}
+.timeline-date{font-size:11px}
+.timeline-item h3{font:600 16px/1.4 var(--display)}
+.timeline-item p,.current-note p{font-size:13px;line-height:1.65}
+.timeline-item small{font-size:12px}
+.talks>span:not(.timeline-label){font:11px var(--sans)}
+.contact-links a,.contact-bottom>p{font-size:13px}
+.site-footer>span,.site-footer>a:last-child{font-size:10px}
+
+@media(max-width:900px){
+  .publication{grid-template-columns:54px 1fr 205px 16px;gap:12px}
+}
+@media(max-width:640px){
+  .hero h1{font-size:clamp(43px,11vw,62px)}
+  .section-heading h2,.methods-inner h2,.about h2{font-size:clamp(36px,9vw,46px)}
+  .contact h2{font-size:clamp(42px,10vw,62px)}
+  .intro-statement{font-size:23px;line-height:1.48}
+  .publication{grid-template-columns:42px 1fr 14px;gap:9px}
+  .pub-title{font-size:14px}
+  .pub-journal{font-size:12px}
+  .research-card h3{font-size:19px}
+  .research-card>p{font-size:13px}
+  .wordmark{font-size:10px}
+  .hero-meta,.hero-bottom{font-size:9px}
+  .site-footer>span,.site-footer>a:last-child{font-size:9px}
+}
