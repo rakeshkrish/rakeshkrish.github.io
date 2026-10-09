@@ -4,8 +4,8 @@ Static research portfolio for GitHub Pages, built with HTML, CSS, and a small am
 
 ## Publish
 
-This is the user site repository (`rakeshkrish.github.io`). To publish from GitHub, merge the portfolio branch into the repository's default branch and ensure Pages is configured to deploy from that branch's root. The site will be available at:
+GitHub Pages serves this user site repository at:
 
 https://rakeshkrish.github.io/
 
-No build step or package installation is required.
+The site files are in the repository root. No build step or package installation is required.
