@@ -52,3 +52,188 @@ body,.site-header{background:var(--paper);color:var(--ink)}
 .contact-arrow:hover{background:#e6dfd1;color:#142019}
 .site-footer{border-color:#343b35}
 ::selection{background:#b96343;color:#fff8ee}
+
+/* Keep secondary copy comfortably readable against the dark surfaces. */
+:root {
+  --paper: #111411;
+  --ink: #f1eee7;
+  --muted: #b9c1b8;
+  --line: #39423b;
+  --accent: #df9875;
+  --dark: #1b241e;
+}
+
+.hero-intro,
+.section-note,
+.research-card > p,
+.pub-journal,
+.pub-footnote,
+.about-lede,
+.timeline-item p,
+.timeline-item small,
+.current-note p,
+.method-list small,
+.contact-bottom > p,
+.site-footer > span,
+.site-footer > a:last-child {
+  color: #c0c8bf;
+}
+
+.eyebrow,
+.hero-meta,
+.art-index span,
+.art-coordinate,
+.hero-bottom,
+.card-top,
+.pub-year,
+.timeline-label,
+.timeline-date,
+.contact-index {
+  color: #c0c9bf;
+}
+
+
+/* A cleaner, deeper black palette across the whole page. */
+:root {
+  --paper: #050505;
+  --ink: #f4f2ec;
+  --muted: #c0c0ba;
+  --line: #292929;
+  --accent: #e6a07c;
+  --dark: #080808;
+}
+
+body,
+.site-header,
+.nav,
+.intro-band,
+.methods-band,
+.about,
+.contact,
+.site-footer {
+  background-color: #050505;
+  color: var(--ink);
+}
+
+.page-grain { opacity: .04; }
+
+.hero-art:before {
+  display: block;
+  background: radial-gradient(circle at 50% 50%, #0a0d0b 0%, #050505 64%, transparent 77%);
+}
+.art-index,
+.art-caption,
+.art-coordinate { z-index: 2; }
+.art-caption { color: #e7e2d7; bottom: 0; }
+.hero-visual-stack {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.molecule {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(100%, 340px);
+  overflow: visible;
+}
+.simulation-frame {
+  width: min(100%, 420px);
+  display: grid;
+  gap: 5px;
+}
+.simulation-frame > span {
+  color: #d2d8d1;
+  font: 11px/1.4 var(--sans);
+  letter-spacing: .06em;
+}
+.intro-video {
+  position: relative;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  aspect-ratio: 14 / 5;
+  object-fit: contain;
+  background: #000;
+  border: 1px solid #252525;
+}
+.orbit ellipse { stroke: #7c9382; opacity: .52; }
+.bonds path { stroke: #9bb0a1; opacity: .55; }
+.nodes circle { fill: #8aa693; stroke: #050505; }
+.nodes circle:nth-child(3n) { fill: #e6a07c; }
+.nodes circle:nth-child(4n) { fill: #e3c394; }
+.focus-node { fill: #f4f2ec; stroke: #e6a07c; }
+.focus-center { fill: #e6a07c; }
+.labels text { fill: #a9b5ab; }
+
+.intro-band,
+.methods-band,
+.about { background-color: #080808; }
+.research-card {
+  background: #050505;
+  border-color: #292929;
+}
+.research-card:hover { border-color: #55504a; }
+.card-visual,
+.card-peptide .card-visual,
+.card-phase .card-visual,
+.card-dna .card-visual {
+  background-color: #090909;
+}
+.method-list,
+.method-list > div,
+.publication-list,
+.publication,
+.timeline-item,
+.contact-main,
+.contact-links a,
+.site-footer {
+  border-color: #292929;
+}
+.method-list small,
+.pub-journal,
+.pub-footnote,
+.timeline-item small,
+.site-footer > span,
+.site-footer > a:last-child {
+  color: #c5c5c0;
+}
+.button-dark,
+.button-dark:hover { background: #171717; }
+
+/* Make the research illustrations crisp while keeping their dark presentation. */
+.card-visual {
+  border: 1px solid #262b28;
+  background-color: #070808;
+}
+.visual-label {
+  z-index: 2;
+  color: #f2f1eb;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: .04em;
+  padding: 4px 6px;
+  background: rgba(0, 0, 0, .72);
+}
+.membrane { opacity: .96; }
+.membrane:after { background: #45684d; opacity: .9; }
+.droplet {
+  background: radial-gradient(ellipse at 45% 45%, #e0ae70, #b8774d 68%, rgba(184,119,77,.8));
+  box-shadow: 0 0 0 8px rgba(225,169,108,.18), 0 0 0 17px rgba(225,169,108,.1);
+}
+.droplet i { width: 6px; height: 6px; background: #fff0ca; box-shadow: 0 0 5px rgba(255,226,167,.65); }
+.phase-particles b { width: 6px; height: 6px; background: #c4dfc6; box-shadow: 0 0 5px rgba(196,223,198,.65); }
+.card-phase .label-a { left: 50%; top: 27px; transform: translateX(-50%); }
+.card-phase .label-b { left: 12px; right: auto; top: 50%; transform: translateY(-50%); }
+.dna-visual svg { stroke: #c4d9c2; stroke-width: 2.4; }
+.dna-visual svg path:first-child { stroke: #e1eee0; stroke-width: 3.2; }
+.dna-visual svg path:nth-child(2) { stroke: #edbb83; stroke-width: 1.5; opacity: 1; }
+.dna-proteins b { background: #f3a07b; border-color: #fff1e5; box-shadow: 0 0 0 1px #e6815a, 0 0 8px rgba(243,160,123,.5); }
+
+@media (max-width: 640px) {
+  .hero-art { aspect-ratio: auto; min-height: 610px; padding: 32px 0 50px; }
+  .art-caption { bottom: 10px; }
+}

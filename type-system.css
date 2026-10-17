@@ -61,3 +61,101 @@ h1 em,h2 em{font-family:var(--display);font-style:normal;font-weight:500;letter-
   .hero-meta,.hero-bottom{font-size:9px}
   .site-footer>span,.site-footer>a:last-child{font-size:9px}
 }
+
+/* Reading comfort: a steady type scale, relaxed line spacing, and legible labels. */
+:root {
+  --text-base: 17px;
+  --text-small: 14px;
+}
+
+body {
+  font-size: var(--text-base);
+  line-height: 1.72;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hero-intro,
+.section-note,
+.research-card > p,
+.about-lede,
+.timeline-item p,
+.current-note p,
+.contact-bottom > p {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.research-card h3,
+.timeline-item h3 {
+  font-size: 20px;
+  line-height: 1.42;
+}
+
+.pub-title {
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.pub-journal,
+.timeline-item small,
+.method-list small,
+.contact-links a {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.eyebrow,
+.card-top,
+.tag-row span,
+.visual-label,
+.art-index,
+.art-coordinate,
+.hero-bottom,
+.method-list > div > span,
+.pub-year,
+.timeline-label,
+.timeline-date,
+.talks > span:not(.timeline-label),
+.contact-index,
+.site-footer > span,
+.site-footer > a:last-child {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: .035em;
+}
+
+.hero-meta { font-size: 11px; }
+.nav a { font-size: 15px; }
+.nav-contact, .button, .text-link { font-size: 15px; }
+
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .hero-intro,
+  .section-note,
+  .research-card > p,
+  .about-lede,
+  .timeline-item p,
+  .current-note p,
+  .contact-bottom > p { font-size: 15px; }
+  .pub-title { font-size: 16px; }
+  .pub-journal,
+  .timeline-item small,
+  .method-list small,
+  .contact-links a { font-size: 13px; }
+  .eyebrow,
+  .card-top,
+  .tag-row span,
+  .visual-label,
+  .art-index,
+  .art-coordinate,
+  .hero-bottom,
+  .method-list > div > span,
+  .pub-year,
+  .timeline-label,
+  .timeline-date,
+  .talks > span:not(.timeline-label),
+  .contact-index,
+  .site-footer > span,
+  .site-footer > a:last-child { font-size: 11px; }
+}

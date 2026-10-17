@@ -17,3 +17,10 @@ nav.querySelectorAll('a').forEach((link) => {
 });
 
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+const introVideo = document.querySelector('.intro-video');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+if (introVideo && !prefersReducedMotion.matches) {
+  introVideo.play().catch(() => {});
+}
